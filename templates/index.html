@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Wine Prediction</title>
+</head>
+<body>
+	<form action='/predict' autocomplete='on' method='POST'>
+		fixed_acidity: <input type = 'number' name='fixed_acidity'><br>
+		volatile_acidity: <input type='number' name='volatile_acidity'><br>
+		citric_acid: <input type='number' name='citric_acid'><br>
+		residual_sugar: <input type='number' name='residual_sugar'><br>
+		chlorides: <input type='number' name='chlorides'><br>
+		free_sulfur_dioxide: <input type='number' name='free_sulfur_dioxide'><br>
+		total_sulfur_dioxide: <input type='number' name='total_sulfur_dioxide'><br>
+		density: <input type='number' name='density'><br>
+    pH: <input type='number' name='pH'><br>
+    sulphates: <input type='number' name='sulphates'><br>
+    alcohol: <input type='number' name='alcohol'><br>
+		<button type='submit'>Predict</button>
+	</form>
+    <p>My prediction: {{ prediction }}</p>
+</body>
+</html>
